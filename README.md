@@ -4,13 +4,13 @@
 [![TON Blockchain](https://img.shields.io/badge/TON-Blockchain-blue?style=for-the-badge&logo=telegram)](https://ton.org/)  
 [![RFOF](https://img.shields.io/badge/RFOF-Network-darkgreen?style=for-the-badge&logo=bitcoin)](https://rfof-bitcoin.org)  
 
-This repository contains the **Comprehensive Bubatz-Quekta-RFOF FunC Contract** and the **Comprehensive RFOF-NETWORK Smart Contract**, a groundbreaking and unified blockchain system designed for the **TON Blockchain**. By merging innovative neural systems, ARC Blocks, Majorana tokenization, quantum mechanisms, and BOx-Blockchain concepts, this repository establishes a decentralized architecture poised to surpass the capabilities of conventional blockchain solutions such as Bitcoin. The technology enables enhanced usability, security, and scalability for a new era of blockchain innovation.
+This repository contains the **Comprehensive Bubatz-Quekta-Quetta-RFOF FunC Contract** and the **Comprehensive RFOF-NETWORK Smart Contract**, a groundbreaking and unified blockchain system designed for the **TON Blockchain**. By merging innovative neural systems, ARC Blocks, Majorana tokenization, quantum mechanisms, and BOx-Blockchain concepts, this repository establishes a decentralized architecture poised to surpass the capabilities of conventional blockchain solutions such as Bitcoin. The technology enables enhanced usability, security, and scalability for a new era of blockchain innovation.
 
 ---
 
 ## 🔑 **Core Features**
 
-### Bubatz-Quekta-RFOF Contract
+### Bubatz-Quekta-Quetta-RFOF Contract
 - Integrates neural structures with blockchain technologies to deliver advanced decentralization.
 - Supports essential blockchain operations such as minting, burning, staking, and quantum mechanisms.
 - Ensures compatibility with TON APIs for external network interaction and decentralized optimization.
