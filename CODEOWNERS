@@ -1,0 +1,6 @@
+# Global Codeowners
+*       @username -> @RFOF-NETWORK & @Satoramy-PRAI
+
+# Specific Responsibilities
+/docs/* @doc-maintainer -> @RFOF-NETWORK & @Satoramy-PRAI
+/src/*  @developer1 -> @RFOF-NETWORK & @Satoramy-PRAI 
