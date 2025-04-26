@@ -1,0 +1,8 @@
+# Contribution Guide
+# Founders -> Satoramy J.K 
+Thank you for considering contributing! Here are a few steps:  
+1. Fork the repository.  
+2. Create a branch (`git checkout -b feature/name`).  
+3. Test locally and make changes.  
+4. Submit a Pull Request!  
+Regarding the LICENSE file: As the provided content is already in plaintext format and self-explanatory, you can use it as is without translation since legal and licensing texts often retain their original wording for clarity and compliance.
