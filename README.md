@@ -1,8 +1,8 @@
 # Comprehensive PRAI-RFOF Fusion Blockchain Repository
 
-[![GitHub](https://img.shields.io/badge/GitHub-Repository-black?style=for-the-badge&logo=github)](https://github.com/)  
-[![TON Blockchain](https://img.shields.io/badge/TON-Blockchain-blue?style=for-the-badge&logo=telegram)](https://ton.org/)  
+[![GitHub](https://img.shields.io/badge/GitHub-Repository-black?style=for-the-badge&logo=github)](https://github.com/) 
 [![RFOF](https://img.shields.io/badge/RFOF-Network-darkgreen?style=for-the-badge&logo=bitcoin)](https://rfof-bitcoin.org)  
+[![TON Blockchain](https://img.shields.io/badge/TON-Blockchain-blue?style=for-the-badge&logo=telegram)](https://ton.org/)  
 
 This repository contains the **Comprehensive Bubatz-Quekta-Quetta-RFOF FunC Contract** and the **Comprehensive RFOF-NETWORK Smart Contract**, a groundbreaking and unified blockchain system designed for the **TON Blockchain**. By merging innovative neural systems, ARC Blocks, Majorana tokenization, quantum mechanisms, and BOx-Blockchain concepts, this repository establishes a decentralized architecture poised to surpass the capabilities of conventional blockchain solutions such as Bitcoin. The technology enables enhanced usability, security, and scalability for a new era of blockchain innovation.
 
