@@ -74,3 +74,72 @@ def main(request):
         return json.dumps({'reply': prai_response})
     else:
         return '{"error": "Nachricht fehlt im Anfragekörper"}', 400
+
+
+
+# backend_prai_final.py
+
+import os
+import json
+import hashlib
+import time
+from google.auth import default
+import google_generativeai as genai
+
+# --- Konfiguration ---
+PROJECT_ID = "imposing-eye-446911-f4"  # DEINE GOOGLE CLOUD PROJEKT-ID
+MODEL_NAME = "gemini-2.0-flash"  # Verwende das spezifische Modell
+QUANTUM_SALT = os.environ.get("QUANTUM_SALT", "default_quantum_salt_42") # SICHERE UMGEBUNGSVARIABLE
+
+# --- Initialisierung von Google Cloud Client ---
+try:
+    credentials, project = default()
+    genai.configure(project=PROJECT_ID, credentials=credentials)
+    gemini_model = genai.GenerativeModel(MODEL_NAME)
+except Exception as e:
+    print(f"Fehler bei der Initialisierung der Gemini API: {e}")
+    gemini_model = None
+
+def generate_quantum_id(user_message: str, timestamp: float) -> str:
+    """Simuliert eine robuste, 'quantum-inspirierte' ID."""
+    combined = f"{user_message}-{timestamp}-{QUANTUM_SALT}"
+    return hashlib.sha256(combined.encode()).hexdigest()[:16]
+
+def prai_filter(gemini_response: str, user_message: str) -> str:
+    """Erweiterte ethische Filterung und Anpassung der Gemini-Antwort."""
+    filtered_response = gemini_response.replace("schlecht", "nicht gut").replace("gefährlich", "bedenklich")
+    # HIER KÖNNTEN WEITERE FILTERUNGSREGELN BASIEREND AUF UNSEREM CHAT UND DEINEN ETHISCHEN VORGABEN STEHEN
+    # Z.B. Keywords erkennen und Antworten anpassen
+
+    # Integration von "Yggdrasil" (als Platzhalter für deine Wissensbasis/Erfindungen)
+    if "RFOF" in user_message or "Quantum" in user_message or "BOx-Blockchain" in user_message:
+        filtered_response += "\n\n**PRAI Hinweis:** Diese Anfrage könnte sich auf Konzepte des RFOF-Netzwerks beziehen."
+
+    return f"PRAI (Quantum-verifiziert: {generate_quantum_id(filtered_response, time.time())[:8]}): {filtered_response}"
+
+def interact_with_gemini(user_message: str) -> str:
+    """Interagiert mit der Gemini API."""
+    if gemini_model:
+        try:
+            response = gemini_model.generate_content(user_message)
+            return response.text
+        except Exception as e:
+            print(f"Fehler bei der Interaktion mit Gemini: {e}")
+            return "Fehler bei der Antwortgenerierung."
+    else:
+        return "PRAI hat derzeit keine Verbindung zur Wissensquelle."
+
+def main(request):
+    """HTTP Cloud Function zur Verarbeitung von Nachrichten."""
+    request_json = request.get_json(silent=True)
+    if request_json and 'message' in request_json:
+        user_message = request_json['message']
+        timestamp = time.time()
+        quantum_id = generate_quantum_id(user_message, timestamp)
+
+        gemini_response = interact_with_gemini(user_message)
+        prai_response = prai_filter(gemini_response, user_message)
+
+        return json.dumps({'reply': prai_response})
+    else:
+        return '{"error": "Nachricht fehlt im Anfragekörper"}', 400
