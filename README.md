@@ -10,6 +10,20 @@ This repository contains the **Comprehensive Bubatz-Quekta-Quetta-RFOF FunC Cont
 
 ## 🔑 **Core Features**
 
+<link rel="stylesheet" href="styles/profile.css">
+
+<div id="rfof-profile-app-container">
+    <div class="column">
+        <div id="chat-container-target"></div>
+    </div>
+    <div class="column">
+        <div id="sandbox-container-target"></div>
+    </div>
+</div>
+
+<script src="scripts/main.js"></script>
+
+
 ### CTC-Quekta-Quetta-RFOF Contract
 - Integrates neural structures with blockchain technologies to deliver advanced decentralization.
 - Supports essential blockchain operations such as minting, burning, staking, and quantum mechanisms.
