@@ -8,6 +8,8 @@
 [![RFOF](https://img.shields.io/badge/RFOF-Network-darkgreen?style=for-the-badge&logo=bitcoin)](https://rfof-network-ready-for-our-future.github.io/BitcoinInternet/#)
 
 [![TON Blockchain](https://img.shields.io/badge/TON-Blockchain-blue?style=for-the-badge&logo=telegram)](https://ton.org/)
+
+[![RFOF-SpiderWeb.NET](https://img.shields.io/badge/RFOF-SpiderWeb.NET-%23282c34?style=for-the-badge&logo=appveyor)](https://rfofspidernet.de)
 </div>
 
 ---
