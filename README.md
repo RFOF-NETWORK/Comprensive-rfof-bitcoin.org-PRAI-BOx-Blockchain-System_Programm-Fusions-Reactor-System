@@ -3,9 +3,9 @@
 
 <div class="repository-header">
    
-[![GitHub](https://img.shields.io/badge/GitHub-Repository-black?style=for-the-badge&logo=github)](https://github.com/)
+[![GitHub](https://img.shields.io/badge/GitHub-Profile-black?style=for-the-badge&logo=github)](https://github.com/RFOF-NETWORK)
 
-[![RFOF](https://img.shields.io/badge/RFOF-Network-darkgreen?style=for-the-badge&logo=bitcoin)](https://rfof-bitcoin.org)
+[![RFOF](https://img.shields.io/badge/RFOF-Network-darkgreen?style=for-the-badge&logo=bitcoin)](https://rfof-network-ready-for-our-future.github.io/BitcoinInternet/#)
 
 [![TON Blockchain](https://img.shields.io/badge/TON-Blockchain-blue?style=for-the-badge&logo=telegram)](https://ton.org/)
 </div>
